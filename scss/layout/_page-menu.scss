@@ -1,0 +1,73 @@
+.page-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  background-color: $redColor;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateX(100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+  overflow: auto;
+
+  &.is-open {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    z-index: 50;
+
+    .hamburger{
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      .line{
+        background-color: #fff;
+      }
+    }
+  }
+
+  @include respond-to(md) {
+    width: auto;
+    padding: 88px 198px 88px 157px;
+    align-items: flex-start;
+  }
+}
+
+.page-menu__logo {
+  display: block;
+  width: 66px;
+  margin-bottom: 24px;
+  img {
+    width: 100%;
+  }
+
+  @include respond-to(md) {
+    margin-bottom: 52px;
+    width: 116px;
+  }
+}
+
+.page-menu__list-item {
+  margin-bottom: 40px;
+
+  @include respond-to(md) {
+    margin-bottom: 60px;
+  }
+}
+
+.page-menu__list-link {
+  display: inline-block;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: $DrukBold;
+
+  @include respond-to(md) {
+    font-size: 1.66rem; //50px
+  }
+}

@@ -1,0 +1,64 @@
+
+@import url("https://p.typekit.net/p.css?s=1&k=czj6owu&ht=tk&f=10954.13454.13458.13460&a=10025618&app=typekit&e=css");
+@import "../abstracts/custom-variables";
+
+@font-face {
+  font-family: 'Druk';
+  src: url('#{$fontsUrl}Druk-Medium.eot');
+  src: url('#{$fontsUrl}Druk-Medium.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}Druk-Medium.woff2') format('woff2'),
+  url('#{$fontsUrl}Druk-Medium.woff') format('woff'),
+  url('#{$fontsUrl}Druk-Medium.ttf') format('truetype'),
+  url('#{$fontsUrl}Druk-Medium.svg#Druk-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Druk Text';
+  src: url('#{$fontsUrl}DrukText-Bold.eot');
+  src: url('#{$fontsUrl}DrukText-Bold.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}DrukText-Bold.woff2') format('woff2'),
+  url('#{$fontsUrl}DrukText-Bold.woff') format('woff'),
+  url('#{$fontsUrl}DrukText-Bold.ttf') format('truetype'),
+  url('#{$fontsUrl}DrukText-Bold.svg#DrukText-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Druk Cond Super';
+  src: url('#{$fontsUrl}DrukCond-Super.eot');
+  src: url('#{$fontsUrl}DrukCond-Super.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsUrl}DrukCond-Super.woff2') format('woff2'),
+  url('#{$fontsUrl}DrukCond-Super.woff') format('woff'),
+  url('#{$fontsUrl}DrukCond-Super.ttf') format('truetype'),
+  url('#{$fontsUrl}DrukCond-Super.svg#DrukCond-Super') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family:"freight-sans-pro";
+  src:url("https://use.typekit.net/af/442215/000000000000000000010b5a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/442215/000000000000000000010b5a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/442215/000000000000000000010b5a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+  font-family:"freight-sans-pro";
+  src:url("https://use.typekit.net/af/1709eb/000000000000000000010b60/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/1709eb/000000000000000000010b60/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/1709eb/000000000000000000010b60/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+  font-family:"freight-sans-pro";
+  src:url("https://use.typekit.net/af/8dd886/000000000000000000010b5c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/8dd886/000000000000000000010b5c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/8dd886/000000000000000000010b5c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:500;
+}
+
+@font-face {
+  font-family:"freight-sans-pro";
+  src:url("https://use.typekit.net/af/cef9f3/000000000000000000010b5e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/cef9f3/000000000000000000010b5e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/cef9f3/000000000000000000010b5e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:600;
+}

@@ -1,0 +1,28 @@
+.homepage-section {
+  height: 22vh;
+  min-height: 150px;
+  padding-bottom: 11px;
+
+  @include respond-to(xs){
+    height: 311px;
+  }
+}
+
+.homepage-section__inner {
+  display: flex;
+  margin: 0 -20px;
+  height: 100%;
+}
+
+.homepage-card--left {
+  display: none;
+  padding: 0 20px;
+
+  @include respond-to(md) {
+    display: flex;
+  }
+}
+
+.homepage-card--right {
+  padding: 0 20px;
+}

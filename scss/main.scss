@@ -1,0 +1,47 @@
+@import "abstracts/custom-variables";
+@import "abstracts/mixins";
+
+@import "vendors/normalize";
+@import "vendors/slick";
+
+@import "base/fonts";
+@import "base/custom-reset";
+
+@import "base/typography";
+@import "base/animations";
+@import "base/helpers";
+
+@import "layout/containers";
+@import "layout/grids";
+@import "layout/general-layout-styles";
+@import "layout/header";
+@import "layout/page-menu";
+@import "layout/footer";
+@import "layout/homepage-section";
+
+@import "components/img-fallback";
+@import "components/carousel";
+@import "components/buttons";
+@import "components/video-bg";
+@import "components/homepage-overlay";
+@import "components/homepage-header";
+@import "components/homepage-slider";
+@import "components/homepage-top-section";
+@import "components/homepage-middle-section";
+@import "components/homepage-bottom-section";
+@import "components/homepage-section-mob";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+.homepage-section__mob{
+  position: relative;
+  padding-bottom: 5px;
+  .homepage-card{
+    position: relative;
+    height: 100%;
+    background-color: $redColor;
+    img{
+      @include imageCover;
+    }
+  }
+}

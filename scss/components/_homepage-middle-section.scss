@@ -1,0 +1,107 @@
+.homepage-middle__section {
+  padding: 0 0 11px;
+  font-family: $DrukSuper;
+  overflow: hidden;
+
+  @include respond-to(md){
+    height: 740px;
+    padding: 40px 0;
+  }
+  @include respond-to(lg){
+    height: 833px;
+  }
+}
+
+.homepage-middle__card {
+  height: 100%;
+  &--left {
+    display: none;
+    margin-bottom: -35px;
+    width: 43%;
+    max-width: 43%;
+    flex-direction: column;
+  }
+  &--right {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  @include respond-to(md){
+    &--left {
+      display: flex;
+    }
+    &--right {
+      width: 57%;
+      max-width: 57%;
+    }
+  }
+}
+
+.homepage-middle__half-card {
+  padding-bottom: 35px;
+  height: 50%;
+  width: 100%;
+  position: relative;
+
+  img {
+    @include imageCover;
+  }
+
+
+}
+
+.homepage-half__card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 4rem; //168px;
+  text-transform: uppercase;
+  padding: 45px;
+  background-color: $blueColor;
+  overflow: hidden;
+  span {
+    display: block;
+    line-height: 0.89;
+    letter-spacing: 2px;
+  }
+  @include respond-to(lg){
+    font-size: 5.6rem; //168px;
+  }
+}
+
+.homepage-full__card-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $redColor;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 8px 19px;
+  overflow: hidden;
+  span {
+    display: block;
+    line-height: 0.89;
+    letter-spacing: 0px;
+  }
+  @include respond-to(xs){
+    font-size: 3rem;
+  }
+  @include respond-to(md){
+    font-size: 5rem;
+  }
+  @include respond-to(lg){
+    font-size: 6.3rem;
+    justify-content: flex-end;
+  }
+  @include respond-to(xl){
+    font-size: 7rem;
+  }
+  @include respond-min(1660){
+    font-size: 8rem;
+  }
+  @include respond-min(1800){
+    font-size: 8.5rem; //255px;
+  }
+}
