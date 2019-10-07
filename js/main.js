@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    let resizeId; // for resize timer
 
     function isMobile() {
         if ($('.is-mobile').css('display') === 'block') {
@@ -67,7 +68,10 @@ $(document).ready(function () {
         })
     }
 
-
+    $('.page-section__slider').slick({
+        dots: true,
+        arrows: false
+    });
     //End Carousels
 
     //Homepage header mob
@@ -75,16 +79,47 @@ $(document).ready(function () {
         const header = $('.header');
         let scrollTop = $(window).scrollTop();
         let bottom = $('.homepage-top__card--left').height();
-        if(isMobile()){
-            if(scrollTop >= bottom/2){
+        if (isMobile()) {
+            if (scrollTop >= bottom / 2) {
                 header.addClass('homepage-header--fixed');
-            }else{
+            } else {
                 header.removeClass('homepage-header--fixed');
             }
         }
     }
 
+    //Location page
+    $('.amenities-list__link').on('click', function (e) {
+        e.preventDefault();
+        let $this = $(this);
+        let parent = $this.parent();
+        let listItem = $('.amenities-list__item');
+        let sublist = $('.amenities-sublist');
 
+        if (isMobile()) {
+            sublist.show();
+        } else {
+            if (parent.hasClass('is-active')) {
+                parent.toggleClass('is-active');
+                parent.find('.amenities-sublist').slideToggle();
+            }
+            else {
+                listItem.removeClass('is-active');
+                sublist.slideUp();
+                parent.addClass('is-active');
+                parent.find('.amenities-sublist').slideDown();
+            }
+        }
+    });
+
+    function resetLocationList(){
+        if(isMobile()){
+            $('.amenities-sublist').show();
+        }
+    }
+
+
+    //function calls
     homeSliderInit();
 
     $(window).on('scroll', function () {
@@ -92,9 +127,16 @@ $(document).ready(function () {
             homeHeaderTransition();
         }
     });
+
     $(window).resize(function () {
-        // headerReset();
+        /* Trigger resize once */
+        clearTimeout(resizeId);
+        resizeId = setTimeout(doneResizing, 500);
+
+        resetLocationList();
     });
+
+    function doneResizing() {}
 
     $(window).on('orientationchange', function () {
         // headerReset();
