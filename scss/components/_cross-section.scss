@@ -1,0 +1,39 @@
+.cross-card {
+  width: 100%;
+
+  &--left {
+    order: 1;
+    padding-bottom: 0 !important;
+  }
+  &--right {
+   order: 0;
+  }
+  @include respond-to(md) {
+    &--left {
+      width: 48%;
+      max-width: 48%;
+      order: 0;
+    }
+    &--right {
+      width: 52%;
+      max-width: 52%;
+      order: 1;
+    }
+  }
+}
+
+.cross-card__content{
+  background-color: #fff;
+  color: $blueColor;
+
+  @include respond-to(md){
+    padding-top: 99px;
+    padding-bottom: 87px;
+    p{
+      max-width: 600px;
+    }
+  }
+  @include respond-to(xl){
+    //padding-left: 22%;
+  }
+}

@@ -1,0 +1,35 @@
+.section-contact{
+  color: #fff;
+  background-color: $blueColor;
+  padding-top: 40px;
+  padding-bottom: 52px;
+
+  @include respond-to(md){
+    padding: 106px 0;
+  }
+}
+
+.section-contact__row{
+
+  @include respond-to(md){
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.section-contact__col{
+  //border: 1px solid #fff;
+  h2{
+    margin-bottom: 17px;
+    letter-spacing: 2.5px;
+  }
+
+  @include respond-to(md){
+    width: 50%;
+    max-width: 50%;
+    h2{
+      margin-bottom: 50px;
+    }
+  }
+}
+

@@ -1,0 +1,36 @@
+.location-section__location {
+  padding-top: 20px;
+
+  @include respond-to(md) {
+    padding-top: 40px;
+  }
+}
+
+.location-card {
+  width: 100%;
+
+  @include respond-to(md) {
+    &--left {
+      width: 42%;
+      max-width: 42%;
+    }
+    &--right {
+      width: 58%;
+      max-width: 58%;
+    }
+  }
+}
+
+.location-card__content {
+  background-color: $blueColor;
+  color: #fff;
+
+  @include respond-to(md) {
+    padding-top: 106px;
+    padding-bottom: 113px;
+
+    p {
+      max-width: 745px;
+    }
+  }
+}

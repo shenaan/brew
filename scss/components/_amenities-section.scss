@@ -1,0 +1,54 @@
+.amenities-card{
+  
+  &--left{
+    background-color: $redColor;
+    padding-bottom: 0 !important;
+  }
+  &--right{
+    background-color: #50b6e8;
+  }
+  @include respond-to(md){
+    &--left{
+      width: 69%;
+      max-width: 69%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &--right{
+      width: 31%;
+      max-width: 31%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.amenities-card__img{
+  height: 284px;
+
+  @include respond-to(xs){
+    height: 400px;
+  }
+  @include respond-to(md){
+    height: 100%;
+    min-height: 900px;
+  }
+  @include respond-to(lg){
+    min-height: 1000px;
+  }
+  @include respond-to(xl){
+    min-height: 1174px;
+  }
+}
+
+.amenities-card__content{
+  color: #fff;
+
+  @include respond-to(md){
+    padding-top: 108px;
+    padding-bottom: 113px;
+  }
+  @include respond-to(xl){
+    padding-left: 104px;
+  }
+}

@@ -1,5 +1,5 @@
 .header {
-  padding: 32px 20px;
+  padding: 20px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -12,6 +12,13 @@
   .main-container{
     display: flex;
   }
+
+  @include respond-to(md){
+    padding: 32px 20px;
+    .main-container{
+      padding: 0;
+    }
+  }
 }
 
 .header__logo{
@@ -20,6 +27,10 @@
 
   img{
     width: 100%;
+  }
+
+  @include respond-to(md){
+    width: 48px;
   }
 }
 

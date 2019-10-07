@@ -1,0 +1,72 @@
+.section-contact__download {
+  margin-bottom: 45px;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include respond-to(sm) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  @include respond-to(md) {
+    margin-bottom: 92px;
+    width: 48%;
+    max-width: 48%;
+  }
+}
+
+.section-contact__logo {
+  width: 129px;
+  display: flex;
+  margin-bottom: 20px;
+  img {
+    width: 100%;
+  }
+
+  @include respond-to(sm) {
+    margin-bottom: 0;
+  }
+  @include respond-to(xl) {
+    width: 156px;
+  }
+  @include respond-min(1800) {
+    width: 225px;
+  }
+}
+
+.section-contact__download-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 63px;
+  width: 100%;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: $DrukBold;
+  font-size: 0.73rem; //39px
+  white-space: nowrap;
+  color: #fff;
+
+  @include respond-to(xs) {
+    width: 300px;
+  }
+
+  @include respond-to(md) {
+    width: 280px;
+    font-size: 1rem; //39px
+    margin-left: auto;
+  }
+  @include respond-to(xl) {
+    width: 360px;
+    height: 78px;
+  }
+  @include respond-min(1800) {
+    width: 430px;
+    height: 111px;
+    font-size: 1.3rem; //39px
+  }
+}

@@ -1,0 +1,18 @@
+.location-hero{
+  width: 100vw;
+  height: 100vh;
+  padding-top: 96px;
+
+  @include respond-to(md){
+    min-height: 600px;
+  }
+}
+
+.location-hero__img{
+  @include square(100%);
+  position: relative;
+
+  img{
+    @include imageCover;
+  }
+}

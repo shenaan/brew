@@ -1,0 +1,73 @@
+.culture-section__slider {
+  .slick-dots {
+    left: 20px;
+    right: auto;
+    li{
+      margin-right: 15px;
+      margin-left: 0px;
+    }
+  }
+  @include respond-to(lg){
+    .slick-dots {
+      left: 40px;
+      li{
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.culture-card {
+  width: 100%;
+
+  @include respond-to(md) {
+    &--left {
+      width: 58%;
+      max-width: 58%;
+    }
+    &--right {
+      width: 42%;
+      max-width: 42%;
+    }
+  }
+}
+
+.culture-card__content {
+  color: $blueColor;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  font-size: 2rem;
+  font-family: $DrukSuper;
+  line-height: 0.89;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  span {
+    display: block;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 0 #000;
+  }
+  @include respond-to(xs) {
+    font-size: 2.5rem;
+  }
+  @include respond-to(md) {
+    padding: 27px 0 0;
+    margin-bottom: -15px;
+    font-size: 3.5rem;
+    span {
+      margin-bottom: 20px;
+    }
+  }
+  @include respond-to(lg) {
+    font-size: 4.3rem;
+  }
+  @include respond-to(xl) {
+    font-size: 5.3rem;
+  }
+  @include respond-min(1800) {
+    font-size: 7rem;
+  }
+  @include respond-to(xxl) {
+    font-size: 7.66rem; //230px
+  }
+}

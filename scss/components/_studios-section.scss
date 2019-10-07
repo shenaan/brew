@@ -1,0 +1,30 @@
+.studios-card {
+  width: 100%;
+
+  @include respond-to(md) {
+    &--left {
+      width: 34%;
+      max-width: 34%;
+    }
+    &--right {
+      width: 66%;
+      max-width: 66%;
+    }
+  }
+}
+
+.studios-card__content{
+  background-color: $blueColor;
+  color: #fff;
+
+  @include respond-to(md){
+    padding-top: 114px;
+    padding-bottom: 151px;
+    p{
+      max-width: 901px;
+    }
+  }
+  @include respond-to(xl){
+    //padding-left: 22%;
+  }
+}

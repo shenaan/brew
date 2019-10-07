@@ -5,7 +5,10 @@
   //border: 1px solid green;
 
   @include respond-to(md) {
-    padding: 0 8%;
+    padding: 0 5%;
+  }
+  @include respond-to(xl) {
+    padding: 0 10.2%;
   }
 }
 

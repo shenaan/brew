@@ -7,63 +7,56 @@ html {
 
 
 h1, .h1 {
-  font-size: 35px;
-  font-weight: 400;
-  line-height: 35px;
-  text-transform: uppercase;
-  @include respond-to(md) {
-    font-size: 55px;
-    line-height: 62px;
-  }
 }
 
 h2, .h2 {
-  font-size: 2.28rem; //32px
-  font-weight: 700;
-  line-height: 2.14rem; //30px
+  font-size: 0.73rem; //22px
+  font-weight: 600;
+  line-height: 1;
   text-transform: uppercase;
-  letter-spacing: -0.5px;
+  font-family: $DrukBold;
+  margin-bottom: 20px;
+  letter-spacing: 1.2px;
 
   @include respond-to(md) {
-    font-size: 3rem;
-    line-height: 3rem; //42px
+    font-size: 1.3rem;
+    margin-bottom: 62px;
+  }
+  @include respond-to(lg) {
+    font-size: 2rem; //60px
   }
 }
 
 h3, .h3 {
-  font-size: 1.71rem; //24px
-  font-weight: 700;
-  line-height: 2.72rem;  //38.18px
-  letter-spacing: -0.3px;
+
 
   @include respond-to(md) {
-    font-size: 2.14rem; //30px
-    line-height: 2.72rem;  //38.18px
+
   }
 }
 
 h4, .h4 {
-  font-size: 1.5rem; //21px
-  font-weight: 700;
-  line-height: 1;
+
   @include respond-to(md) {
-    font-size: 1.5rem; //21px
-    line-height: 1;
+
   }
 }
 
 p {
-  font-size: 1.14rem; //16px
+  font-size: 0.4rem; //12px
   font-weight: 400;
-  line-height: 1.85rem; //26px
-  margin-bottom: 1.8rem;
-  letter-spacing: 0.6px;
+  line-height: 1.25;
 
   &:last-of-type{
     margin-bottom: 0;
   }
+@include respond-to(xs){
+  font-size: 0.6rem;
+}
   @include respond-to(md) {
-    font-size: 1rem; //14px
-    line-height: 1.75rem; //24px
+    font-size: 0.7rem;
+  }
+  @include respond-to(lg) {
+    font-size: 1rem; //30px
   }
 }
