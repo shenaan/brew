@@ -86,7 +86,7 @@
   padding-left: 22px;
   padding-right: 22px;
   padding-top: 11px;
-
+  resize: vertical;
   @include input-placeholder {
     color: #fffdf6;
   }
@@ -129,6 +129,12 @@
   background-color: transparent;
   border-radius: 0;
   font-family: $DrukBold;
+  @include transition-04;
+
+  @include on-event{
+    background-color: #fff;
+    color: $blueColor;
+  }
 
   @include respond-to(md){
     font-size: 0.88rem;

@@ -11,8 +11,9 @@
 .location-hero__img{
   @include square(100%);
   position: relative;
-
+  background-color: #eee;
   img{
     @include imageCover;
+    object-position: bottom;
   }
 }

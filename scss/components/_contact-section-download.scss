@@ -50,6 +50,12 @@
   font-size: 0.73rem; //39px
   white-space: nowrap;
   color: #fff;
+  @include transition-04;
+
+  @include on-event{
+    background-color: #fff;
+    color: $blueColor;
+  }
 
   @include respond-to(xs) {
     width: 300px;

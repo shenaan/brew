@@ -5,6 +5,10 @@
     width: auto;
     flex: 0 0 auto;
     max-width: 52%;
+
+    @include ieStyles{
+      flex: 1 0 52%;
+    }
   }
   @include respond-min(1800) {
     //padding-left: 10.3vw;
@@ -44,6 +48,11 @@
     margin-bottom: 0;
     width: 50%;
     max-width: 50%;
+
+    @include ieStyles{
+      width: auto;
+      margin-left: auto;
+    }
 
     &:first-of-type {
       padding-right: 30px;

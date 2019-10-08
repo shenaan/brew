@@ -78,6 +78,13 @@
   }
   @include respond-to(md) {
     height: 100%;
+    &--landscape{
+
+      padding-bottom: 47%;
+    }
+    &--portrait{
+      padding-bottom: 71%;
+    }
   }
 }
 
