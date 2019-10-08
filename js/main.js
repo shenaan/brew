@@ -112,11 +112,33 @@ $(document).ready(function () {
         }
     });
 
-    function resetLocationList(){
-        if(isMobile()){
+    function resetLocationList() {
+        if (isMobile()) {
             $('.amenities-sublist').show();
         }
     }
+
+    //Building page
+
+    $('.building-schedule__body-row').on('click', function (e) {
+        let $this = $(this);
+        let parent = $(this).parent();
+        let floorItem = $('.building-schedule__item');
+        let row = $('.building-schedule__body-row');
+        let content = $('.building-schedule__item-content');
+
+        row.removeClass('is-active');
+        if (parent.hasClass('is-active')) {
+            parent.removeClass('is-active');
+            parent.find('.building-schedule__item-content').slideUp();
+        }
+        else {
+            floorItem.removeClass('is-active');
+            content.slideUp();
+            parent.addClass('is-active');
+            parent.find('.building-schedule__item-content').slideDown();
+        }
+    });
 
 
     //function calls
@@ -136,7 +158,8 @@ $(document).ready(function () {
         resetLocationList();
     });
 
-    function doneResizing() {}
+    function doneResizing() {
+    }
 
     $(window).on('orientationchange', function () {
         // headerReset();
