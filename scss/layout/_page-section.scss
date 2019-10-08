@@ -37,6 +37,14 @@
   &--right{
     padding: 32px 20px 40px;
   }
+  p{
+    margin-bottom: 20px;
+    letter-spacing: 0.8px;
+
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
 
   @include respond-to(md){
     &--left{
@@ -62,13 +70,16 @@
     &--right{
       padding: 0 14% 0 155px;
     }
+    p{
+      margin-bottom: 39px;
+    }
   }
 }
 
 .page-section__card-img{
   min-height: 100%;
   position: relative;
-  background-color: $blueColor;
+  background-color: #eee;
   height: 192px;
   img {
     @include imageCover;
@@ -86,12 +97,4 @@
       padding-bottom: 71%;
     }
   }
-}
-
-.page-section__slider{
-
-}
-
-.page-section__slider-item{
-
 }

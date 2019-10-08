@@ -1,0 +1,203 @@
+.building-schedule__item {
+  padding: 10px 10px 0;
+  position: relative;
+  border-bottom: 1px solid $pinkColor;
+  @include transition-03;
+  &.is-active {
+    background-color: $pinkColor;
+    .building-schedule__col {
+      color: #fff;
+    }
+    .building-schedule__col-controls {
+      span {
+        background-color: #fff;
+        &:after {
+          background-color: #fff;
+          display: none;
+        }
+      }
+    }
+    .building-schedule__caption {
+      opacity: 1;
+    }
+  }
+  @include respond-to(md) {
+    padding: 30px 58px 0px 38px;
+  }
+}
+
+.building-schedule__row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 10px;
+
+  @include respond-to(md) {
+    padding-bottom: 25px;
+  }
+}
+
+.building-schedule__col {
+  color: $pinkColor;
+  text-transform: uppercase;
+  font-family: $DrukBold;
+  font-weight: 600;
+  font-size: 0.4rem;
+  line-height: 1;
+  flex: 1 0 33.33%;
+  @include transition-03;
+
+  @include respond-to(sm){
+    flex: 1 0 33.33%;
+  }
+
+  @include respond-to(md) {
+    font-size: 0.6rem;
+  }
+  @include respond-to(lg) {
+    font-size: 0.8rem;
+    @include respond-to(sm){
+      flex: 1 0 32.33%;
+    }
+  }
+  @include respond-to(xl) {
+    font-size: 1rem;
+  }
+}
+
+.building-schedule__body-row {
+  .building-schedule__col {
+    cursor: pointer;
+  }
+}
+
+.building-schedule__col-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin-top: -4px;
+  span {
+    display: block;
+    background-color: $pinkColor;
+    width: 10px;
+    height: 2px;
+    position: relative;
+    @include transition-03;
+    cursor: pointer;
+    &:after {
+      content: '';
+      display: block;
+      height: 10px;
+      width: 2px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -4px;
+      background-color: $pinkColor;
+      margin: auto;
+      @include transition-03;
+    }
+  }
+  @include respond-to(md) {
+    //flex: 0 0 113px;
+    text-align: center;
+
+    span {
+      width: 33px;
+      margin-top: -16px;
+      &:after {
+        height: 33px;
+        top: -16px;
+      }
+    }
+  }
+}
+
+.building-schedule__item-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: none;
+  width: 100%;
+  max-width: 100%;
+
+  &--default {
+    display: block;
+  }
+
+  @include respond-to(md) {
+    padding-top: 28px;
+    padding-bottom: 62px;
+  }
+}
+
+.building-schedule__img {
+  max-width: 322px;
+  @include center;
+  img {
+    width: 100%;
+  }
+
+  @include respond-to(sm) {
+    width: 63%;
+    max-width: 1171px;
+  }
+}
+
+.building-schedule__caption {
+  margin-left: auto;
+  font-size: 0.4rem;
+  opacity: 0;
+  max-width: 120px;
+  @include transition-03;
+  span {
+    display: block;
+    color: #fff;
+    font-family: $DrukBold;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    padding-left: 50px;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: none;
+      background-color: #fff;
+      border-radius: 50%;
+      @include square(20px);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+  }
+
+  @include respond-to(md) {
+    position: absolute;
+    right: 104px;
+    bottom: 70px;
+    font-size: 0.6rem;
+    max-width: none;
+    span {
+      padding-left: 30px;
+      &:before {
+        display: block;
+      }
+    }
+  }
+
+  @include respond-to(xl) {
+    font-size: 0.83rem;
+    span {
+      margin-bottom: 11px;
+      padding-left: 40px;
+    }
+  }
+}

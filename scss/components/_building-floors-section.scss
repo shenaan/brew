@@ -1,0 +1,67 @@
+.building-section__floors{
+
+  @include respond-to(md){
+    height: 700px;
+  }
+  @include respond-to(xl){
+    height: 957px;
+  }
+}
+
+.building-floors__slider{
+  height: 100%;
+  .slick-list{
+    height: 100%;
+  }
+  .slick-track{
+    height: 100%;
+  }
+}
+
+.building-floors__slider-item{
+  height: 100%;
+}
+
+.building-floors__slider-img{
+  position: relative;
+
+  img{
+    @include imageCover;
+  }
+
+  @include respond-to(md){
+    height: 100%;
+  }
+}
+
+.building-floors__slider-caption{
+  position: absolute;
+  left: 20px;
+  bottom: 24px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  min-height: 20px;
+  background-color: #fff;
+  color: $pinkColor;
+  font-size: 0.4rem; //12px
+  line-height: 1;
+  width: fit-content;
+  padding: 3px 5px;
+  z-index: 1;
+
+  @include ieStyles{
+    max-width: 220px;
+  }
+
+  @include respond-to(sm){
+    font-size: 0.4rem; //12px
+    min-height: 30px;
+  }
+
+  @include respond-to(xl){
+    padding: 3px 14px;
+    font-size: 0.83rem; //25px
+    min-height: 60px;
+  }
+}

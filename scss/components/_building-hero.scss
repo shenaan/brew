@@ -1,0 +1,18 @@
+.building-hero{
+  width: 100vw;
+  height: 100vh;
+  padding-top: 96px;
+
+  @include respond-to(md){
+    min-height: 600px;
+  }
+}
+
+.building-hero__img{
+  @include square(100%);
+  position: relative;
+  background-color: #eee;
+  img{
+    @include imageCover;
+  }
+}

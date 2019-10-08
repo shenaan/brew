@@ -1,0 +1,55 @@
+.specification-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.specification-list__item {
+  flex: 1 0 25%;
+  margin-bottom: 20px;
+
+  @include respond-to(md) {
+    margin-bottom: 45px;
+    flex: 1 0 33.33%;
+  }
+
+  @include respond-to(xl){
+    flex: 1 0 25%;
+  }
+}
+
+.specification-list__content {
+  font-size: 0.33rem;
+  line-height: 1.17;
+  text-transform: uppercase;
+  font-family: $DrukBold;
+  max-width: 70px;
+
+  @include respond-to(md){
+    max-width: 117px;
+    font-size: 0.6rem;
+  }
+  @include respond-to(lg){
+    font-size: 0.56rem; //17px
+  }
+}
+
+.specification-list__icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 36px;
+  height: 24px;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  @include respond-to(md) {
+    width: 70px;
+    height: 45px;
+    margin-bottom: 19px;
+  }
+  @include respond-to(xl) {
+    width: 90px;
+    height: 60px;
+  }
+}

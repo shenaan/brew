@@ -6,10 +6,15 @@
     flex: 0 0 auto;
     max-width: 52%;
 
-    @include ieStyles{
+    @include ieStyles {
       flex: 1 0 52%;
     }
   }
+
+  @include respond-to(xl) {
+    padding-left: 50px;
+  }
+
   @include respond-min(1800) {
     //padding-left: 10.3vw;
   }
@@ -39,8 +44,8 @@
     }
   }
 
-  @include respond-to(md){
-    &:last-of-type{
+  @include respond-to(md) {
+    &:last-of-type {
       margin-left: auto;
     }
   }
@@ -49,7 +54,7 @@
     width: 50%;
     max-width: 50%;
 
-    @include ieStyles{
+    @include ieStyles {
       width: auto;
       margin-left: auto;
     }
@@ -74,9 +79,9 @@
     bottom: 0;
   }
 
-  @include respond-to(sm){
+  @include respond-to(sm) {
     @include center;
-    img{
+    img {
       right: 0;
       @include center;
     }

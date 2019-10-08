@@ -1,0 +1,50 @@
+.building-section__specification{
+
+}
+
+.specification-card{
+
+  &--left{
+
+  }
+  &--right{
+
+  }
+  @include respond-to(md){
+    &--left{
+      width: 50%;
+      max-width: 50%;
+    }
+    &--right{
+      width: 50%;
+      max-width: 50%;
+    }
+  }
+}
+
+
+.specification-card__content{
+  color: #fff;
+  background-color: $pinkColor;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  h2{
+    line-height: 0.96;
+    max-width: 200px;
+  }
+
+  @include respond-to(md){
+    padding-top: 107px;
+    padding-bottom: 107px;
+    h2{
+      max-width: none;
+    }
+  }
+  @include respond-to(xl){
+    padding-right: 60px;
+  }
+
+  @include respond-min(1660){
+    padding-right: 112px;
+  }
+}

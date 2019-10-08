@@ -1,0 +1,26 @@
+.building-section__schedule{
+
+  h2{
+    margin-bottom: 30px;
+    padding-left: 10px;
+    color: $pinkColor;
+  }
+
+  @include respond-to(md){
+    h2{
+      margin-bottom: 42px;
+      padding-left: 38px;
+    }
+  }
+}
+
+.building-section__inner{
+  background-color: #f2f2f2;
+  padding-top: 45px;
+  padding-bottom: 40px;
+
+  @include respond-to(md){
+    padding-top: 116px;
+    padding-bottom: 116px;
+  }
+}

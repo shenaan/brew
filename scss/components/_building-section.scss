@@ -1,0 +1,36 @@
+.building-section__building {
+  padding-top: 20px;
+
+  @include respond-to(md) {
+    padding-top: 40px;
+  }
+}
+
+.building-card {
+  width: 100%;
+
+  @include respond-to(md) {
+    &--left {
+      width: 50%;
+      max-width: 50%;
+    }
+    &--right {
+      width: 50%;
+      max-width: 50%;
+    }
+  }
+}
+
+.building-card__content {
+  background-color: $redColor;
+  color: #fff;
+
+  @include respond-to(md) {
+    padding-top: 103px;
+    padding-bottom: 110px;
+
+    p {
+      max-width: 586px;
+    }
+  }
+}

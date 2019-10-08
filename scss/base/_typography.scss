@@ -5,10 +5,6 @@ html {
   font-size: $baseFontSizePixel;
 }
 
-
-h1, .h1 {
-}
-
 h2, .h2 {
   font-size: 0.73rem; //22px
   font-weight: 600;
@@ -16,7 +12,7 @@ h2, .h2 {
   text-transform: uppercase;
   font-family: $DrukBold;
   margin-bottom: 20px;
-  letter-spacing: 1.2px;
+  letter-spacing: 0px;
 
   @include respond-to(md) {
     font-size: 1.3rem;
@@ -24,21 +20,6 @@ h2, .h2 {
   }
   @include respond-to(lg) {
     font-size: 2rem; //60px
-  }
-}
-
-h3, .h3 {
-
-
-  @include respond-to(md) {
-
-  }
-}
-
-h4, .h4 {
-
-  @include respond-to(md) {
-
   }
 }
 
