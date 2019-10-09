@@ -1,22 +1,28 @@
 .section-contact__details {
   @include respond-to(md) {
-    padding-left: 25px;
+    padding-left: 40px;
     margin-left: auto;
-    width: auto;
     flex: 0 0 auto;
-    max-width: 52%;
+    width: 49%;
+    max-width: 49%;
 
     @include ieStyles {
-      flex: 1 0 52%;
+      //flex: 1 0 52%;
     }
+  }
+  @include respond-to(lg){
+    padding-left: 80px;
   }
 
   @include respond-to(xl) {
     padding-left: 50px;
   }
+  @include respond-min(1660){
+    padding-left: 100px;
+  }
 
   @include respond-min(1800) {
-    //padding-left: 10.3vw;
+    padding-left: 155px;
   }
 }
 
@@ -80,10 +86,8 @@
   }
 
   @include respond-to(sm) {
-    @include center;
     img {
-      right: 0;
-      @include center;
+      left: 6px;
     }
   }
   @include respond-to(md) {

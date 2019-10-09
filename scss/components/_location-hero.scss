@@ -1,10 +1,11 @@
 .location-hero{
   width: 100vw;
   height: 100vh;
-  padding-top: 96px;
+  padding-top: 73px;
 
   @include respond-to(md){
     min-height: 600px;
+    padding-top: 102px;
   }
 }
 

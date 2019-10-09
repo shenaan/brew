@@ -98,3 +98,18 @@
     }
   }
 }
+
+.page-section__text-slider{
+  @include respond-to(md){
+    .slick-dots{
+      opacity: 0 !important;
+    }
+  }
+}
+
+.page-section__img-slider{
+  height: 100%;
+  .slick-track, .slick-list{
+    height: 100%;
+  }
+}

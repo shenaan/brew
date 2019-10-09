@@ -1,0 +1,94 @@
+.contact__hero {
+  padding-top: 73px;
+  padding-bottom: 11px;
+
+  .page-section__inner {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @include respond-to(md) {
+    padding-top: 102px;
+    padding-bottom: 20px;
+  }
+}
+
+.contact-card {
+  &--left {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &--right {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include respond-to(md) {
+    &--left {
+      width: 51%;
+      max-width: 51%;
+    }
+    &--right {
+      width: 49%;
+      max-width: 49%;
+    }
+  }
+}
+
+.contact-card__img {
+  height: 369px;
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.contact-card__content {
+  background-color: $pinkColor;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include respond-to(md) {
+    padding-top: 112px;
+    padding-bottom: 163px;
+
+    .section-contact__details {
+      padding-left: 0;
+      margin-left: 0;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  @include respond-to(xl) {
+    padding-left: 50px;
+  }
+
+  @include respond-min(1660) {
+    padding-left: 100px;
+  }
+
+  @include respond-min(1800) {
+    padding-left: 155px;
+    .section-contact__details-col:last-of-type {
+      padding-left: 0;
+      margin-left: 0;
+    }
+  }
+
+  @include respond-min(1900){
+    .section-contact__details-col{
+      width: 48%;
+      max-width: 48%;
+    }
+  }
+}
+
+.contact-hero__title {
+  margin-bottom: 30px;
+
+  @include respond-to(md) {
+    margin-bottom: 88px;
+  }
+}

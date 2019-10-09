@@ -13,8 +13,9 @@
 
   @include respond-to(md) {
     margin-bottom: 92px;
-    width: 48%;
-    max-width: 48%;
+    width: 51%;
+    max-width: 51%;
+    padding-right: 42px;
   }
 }
 

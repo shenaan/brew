@@ -3,11 +3,11 @@
   font-family: $DrukSuper;
   overflow: hidden;
 
-  @include respond-to(md){
+  @include respond-to(md) {
     height: 740px;
     padding: 40px 0;
   }
-  @include respond-to(lg){
+  @include respond-to(lg) {
     height: 833px;
   }
 }
@@ -27,7 +27,7 @@
     height: 100%;
   }
 
-  @include respond-to(md){
+  @include respond-to(md) {
     &--left {
       display: flex;
     }
@@ -47,8 +47,6 @@
   img {
     @include imageCover;
   }
-
-
 }
 
 .homepage-half__card-content {
@@ -66,12 +64,12 @@
     line-height: 0.89;
     letter-spacing: 2px;
   }
-  @include respond-to(lg){
+  @include respond-to(lg) {
     font-size: 5.6rem; //168px;
   }
 }
 
-.homepage-full__card-content{
+.homepage-full__card-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,23 +83,23 @@
     line-height: 0.89;
     letter-spacing: 0px;
   }
-  @include respond-to(xs){
+  @include respond-to(xs) {
     font-size: 3rem;
   }
-  @include respond-to(md){
+  @include respond-to(md) {
     font-size: 5rem;
   }
-  @include respond-to(lg){
+  @include respond-to(lg) {
     font-size: 6.3rem;
     justify-content: flex-end;
   }
-  @include respond-to(xl){
+  @include respond-to(xl) {
     font-size: 7rem;
   }
-  @include respond-min(1660){
+  @include respond-min(1660) {
     font-size: 8rem;
   }
-  @include respond-min(1800){
+  @include respond-min(1800) {
     font-size: 8.5rem; //255px;
   }
 }

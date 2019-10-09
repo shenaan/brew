@@ -46,12 +46,12 @@
   color: $pinkColor;
   font-size: 0.4rem; //12px
   line-height: 1;
-  width: fit-content;
   padding: 3px 5px;
   z-index: 1;
 
   @include ieStyles{
     max-width: 220px;
+    height: 30px;
   }
 
   @include respond-to(sm){
@@ -63,5 +63,9 @@
     padding: 3px 14px;
     font-size: 0.83rem; //25px
     min-height: 60px;
+
+    @include ieStyles{
+      height: 60px;
+    }
   }
 }
