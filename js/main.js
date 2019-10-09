@@ -70,7 +70,9 @@ $(document).ready(function () {
 
     $('.page-section__slider').slick({
         dots: true,
-        arrows: false
+        arrows: false,
+        fade: true,
+        adaptiveHeight: true
     });
     //End Carousels
 
